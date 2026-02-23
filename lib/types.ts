@@ -4,10 +4,10 @@ export type WeeklyStatus = "pending" | "paid" | "skipped";
 
 export interface WeekAllocation {
   weekIndex: number;
-  dueDate: string;
+  dueDate: string | Date;
   amount: number;
   status: WeeklyStatus;
-  paidAt?: string;
+  paidAt?: string | Date;
 }
 
 export interface PartyDto {
